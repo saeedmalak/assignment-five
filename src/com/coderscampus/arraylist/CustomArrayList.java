@@ -25,6 +25,7 @@ public class CustomArrayList<T> implements CustomList<T> {
 		return size;
 	}
 
+	// not sure what this is "@***", but was necessary to get rid of the warnings
 	@SuppressWarnings("unchecked")
 	@Override
 	public T get(int index) {

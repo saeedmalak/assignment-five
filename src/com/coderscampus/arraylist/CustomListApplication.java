@@ -5,11 +5,11 @@ public class CustomListApplication {
 	public static void main(String[] args) {
 
 		// instantiate our new customList
-		CustomList<Integer> numbers = new CustomArrayList<>();
+		CustomList<String> names = new CustomArrayList<>();
 
 		// test to add more than 10 elements
-		for (int i = 1; i <= 11; i++) {
-			numbers.add(i);
+		for (int i = 1; i <= 15; i++) {
+			names.add("John Doe " + "#" + i);
 		}
 		
 		System.out.println("-----------");
@@ -17,9 +17,9 @@ public class CustomListApplication {
 		System.out.println();
 		
 		// now print all those elements and check to make sure there are no "null" values
-		for (int i = 0; i < numbers.getSize(); i++) {
+		for (int i = 0; i < names.getSize(); i++) {
 
-			System.out.println(numbers.get(i));
+			System.out.println(names.get(i));
 		}
 		
 		System.out.println();
@@ -27,8 +27,8 @@ public class CustomListApplication {
 		System.out.println("Get the 7th element from our ArrayList");
 		System.out.println();
 		
-		// use the getIndex method to check if it works as well -> should print 7
-		System.out.println(numbers.get(6));
+		// use the getIndex method to check if it works as well -> should print John Doe #7
+		System.out.println(names.get(6));
 
 
 	}
